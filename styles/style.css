@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* common shared styles */
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+.text-size {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 /* influencer section */
+.influencer-section {
+    margin: 0 auto;
+    border: 2px solid darkcyan;
+}
 
 header {
+    max-width: 1200px;
     padding: 90px 120px;
 }
 
@@ -16,12 +30,13 @@ header {
     color: #3A3A3A;
     font-size: 24px;
     font-weight: 700;
-    width:70%;
-    
+    width: 70%;
+
 }
 
 nav {
     /* border: 1px solid red; */
+    height: auto;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -44,4 +59,52 @@ a {
     height: 1.25rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
+}
+
+/* start your journey section */
+
+.one {
+    max-width: 1200px;
+    padding: 90px 120px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.start-your-journey-text-container {
+    border: 2px solid red;
+    width: 50%;
+    /* height: 300px; */
+}
+
+.header-title {
+    color: #3A3A3A;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    margin-top: 1.2rem;
+}
+
+.start-your-journey-image-container {
+    border: 2px solid red;
+    width: 50%;
+    position: relative;
+}
+.start-your-journey-image-container > .img-camera, .img-circle{
+    margin-left: 5rem;
+}
+
+.img-camera>img {
+    position: absolute;
+    height: 350px;
+}
+
+.img-circle>img {
+    height: 370px;
 }
